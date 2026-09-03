@@ -15,6 +15,7 @@ const App = () => {
   return (
     <div>
       <Background playStatus={playStatus} heroCount={heroCount}/>
+      <Navbar/>
     </div>
   )
 }
