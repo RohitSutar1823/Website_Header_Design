@@ -16,16 +16,17 @@ const Hero = ({heroData,setHeroCount,heroCount,setplayStatus,playStatus}) => {
       </div>
       <div className="hero-dot-play">
         <ul className='hero-dots'>
-          <li onClick={()=>setHeroCount(0)} className={heroCount===0?"hero-dot-orange":"hero-dot"}></li>
-          <li onClick={()=>setHeroCount(1)} className={heroCount===1?"hero-dot-orange":"hero-dot"}></li>
-          <li onClick={()=>setHeroCount(2)} className={heroCount===2?"hero-dot-orange":"hero-dot"}></li>
+          <li onClick={()=>setHeroCount(0)} className={heroCount===0?"hero-dot orange":"hero-dot"}></li>
+          <li onClick={()=>setHeroCount(1)} className={heroCount===1?"hero-dot orange":"hero-dot"}></li>
+          <li onClick={()=>setHeroCount(2)} className={heroCount===2?"hero-dot orange":"hero-dot"}></li>
         </ul>
-      </div>
       <div className="hero-play">
         <img onClick={()=>setplayStatus(!playStatus)} src={playStatus?pause_icon:play_icon} alt="" />
+        <p>See the Video</p>
+      </div>
       </div>
     </div>
   )
 }
 
-export default Herofeat
+export default Hero
