@@ -14,11 +14,15 @@ const App = () => {
   const [heroCount, setHeroCount] = useState(0);
   const [playStatus, setplayStatus] = useState(false);
 
-  useEffect(()=>{
-    setInterval(()=>{
-      setHeroCount((count)=>{return count===2?0:count+1})
-    },5000);
-  },[])
+useEffect(() => {
+
+  const interval = setInterval(() => {
+    setHeroCount((count) => (count === 2 ? 0 : count + 1));
+  }, 5000);
+
+  return () => clearInterval(interval);
+
+}, []);
   return (
     <div>
       <Background playStatus={playStatus} heroCount={heroCount}/>
