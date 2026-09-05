@@ -7,7 +7,15 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20Friendly-success?style=for-the-badge&logo=googlechrome&logoColor=white)
 
-A modern and responsive **EV Landing Page** built using **React.js** and **Vite**. This project features a fullscreen background slideshow, video background support, responsive navigation with a mobile hamburger menu, interactive hero section, and smooth animations. It was built to practice **React Hooks, state management, component-based architecture, conditional rendering, responsive web design, and CSS animations**.
+A modern and responsive **EV Landing Page** built using **React.js** and **Vite**. This project features a fullscreen background slideshow, video background support, responsive navigation with a mobile hamburger menu, an interactive hero section, and smooth animations. It was built to practice **React Hooks, state management, component-based architecture, conditional rendering, responsive web design, and CSS animations**.
+
+---
+
+## 📸 Project Preview
+
+<p align="center">
+  <img src="src/assets/preview.png" alt="EV-olution Landing Page" width="100%">
+</p>
 
 ---
 
@@ -20,14 +28,14 @@ https://website-header-design-five.vercel.app/
 
 ## ✨ Features
 
-- 🚗 Modern EV landing page UI
-- 🖼️ Automatic background image slideshow
-- 🎥 Play/Pause background video
+- 🚗 Modern EV Landing Page UI
+- 🖼️ Automatic Background Image Slideshow
+- 🎥 Play/Pause Background Video
 - 🎯 Interactive Hero Section
-- 🍔 Responsive Hamburger Menu
+- 🍔 Responsive Hamburger Navigation
 - 📱 Fully Responsive Design
 - ⚡ Smooth Fade-In Background Animation
-- 🎨 Clean & Modern UI
+- 🎨 Clean & Modern User Interface
 - 🧩 Reusable React Components
 - 🔄 Automatic Hero Content Switching
 - 🖱️ Interactive Navigation Menu
@@ -52,32 +60,37 @@ Website_Header_Design/
 ├── public/
 ├── src/
 │   ├── assets/
+│   │   ├── arrow_btn.png
 │   │   ├── image1.png
 │   │   ├── image2.png
 │   │   ├── image3.png
-│   │   ├── video1.mp4
-│   │   ├── arrow_btn.png
+│   │   ├── pause_icon.png
 │   │   ├── play_icon.png
-│   │   └── pause_icon.png
+│   │   ├── preview.png
+│   │   └── video1.mp4
 │   │
 │   ├── Components/
-│   │   ├── Navbar/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Navbar.css
+│   │   ├── Background/
+│   │   │   ├── Background.jsx
+│   │   │   └── Background.css
 │   │   │
 │   │   ├── Hero/
 │   │   │   ├── Hero.jsx
 │   │   │   └── Hero.css
 │   │   │
-│   │   └── Background/
-│   │       ├── Background.jsx
-│   │       └── Background.css
+│   │   └── Navbar/
+│   │       ├── Navbar.jsx
+│   │       └── Navbar.css
 │   │
-│   ├── App.jsx
 │   ├── App.css
+│   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
 │
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -180,15 +193,14 @@ http://localhost:5173
 - 📏 Media Queries
 - 🌈 CSS Animations
 - ⚡ CSS Transitions
-- 🎭 Positioning
-- 🎨 Object Fit
+- 🎭 CSS Positioning
+- 🖼️ Object Fit
 - 📱 Responsive Layout
 - 🎯 Hover Effects
-- 🖼️ Background Overlay
-- 🔥 Modern UI Styling
+- 🧩 Z-Index Layering
+- 🎨 Modern UI Styling
 
 ---
-
 
 ## 👨‍💻 Author
 
@@ -198,8 +210,9 @@ http://localhost:5173
 
 ---
 
+
 # ⭐ Mini React Project
 
 This **EV-olution Landing Page** was built as a practice project to strengthen my **React.js** and **Responsive Web Design** skills. During development, I gained hands-on experience with **React Hooks (`useState`, `useEffect`), reusable components, state management, conditional rendering, responsive navigation, CSS Flexbox, media queries, background image/video switching, animations, and modern landing page UI design**.
 
-This project helped me understand how professional landing pages are structured, how responsive layouts are created, and how React components work together to build clean, interactive user interfaces.
+Building this project helped me understand how professional landing pages are structured, how responsive layouts adapt to different screen sizes, and how React components work together to create clean, interactive, and reusable user interfaces.
