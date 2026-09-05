@@ -1,19 +1,40 @@
-import React from 'react'
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
-  return (
-    <div className='nav'>
-        <div className="nav-logo">EV-olution</div>
-        <ul className="nav-menu">
-            <li>Home</li>
-            <li>Explore</li>
-            <li>About</li>
-            <li className="nav-contact">Contact</li>
-        </ul>
 
-      
-    </div>
-  )
-}
+    const [menuOpen, setMenuOpen] = useState(false);
 
-export default Navbar
+    return (
+
+        <nav className="nav">
+
+            <div className="nav-logo">
+                EV-olution
+            </div>
+
+            <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
+
+                <li>Home</li>
+                <li>Explore</li>
+                <li>About</li>
+                <li className="nav-contact">Contact</li>
+
+            </ul>
+
+            <div
+                className="hamburger"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+
+                {menuOpen ? <FaTimes /> : <FaBars />}
+
+            </div>
+
+        </nav>
+
+    );
+};
+
+export default Navbar;
